@@ -3,23 +3,23 @@ package com.example;
 import java.util.Scanner;
 
 public class Grid {
-    private int width;
-    private int height;
+    private int xLimit;
+    private int yLimit;
 
     public int getWidth() {
-        return width;
+        return xLimit;
     }
 
-    private void setWidth(int width) {
-        this.width = width;
+    private void setxLimit(int xLimit) {
+        this.xLimit = xLimit;
     }
 
     public int getHeight() {
-        return height;
+        return yLimit;
     }
 
-    private void setHeight(int height) {
-        this.height = height;
+    private void setyLimit(int yLimit) {
+        this.yLimit = yLimit;
     }
 
     public void setGridDimensions(Scanner scanner) {
@@ -45,7 +45,7 @@ public class Grid {
                 System.out.println("Coordinates must be positive integers.");
             }
         }
-        this.setWidth(dimensions[0]);
-        this.setHeight(dimensions[1]);
+        this.setxLimit(dimensions[0]);
+        this.setyLimit(dimensions[1]);
     }
 }
